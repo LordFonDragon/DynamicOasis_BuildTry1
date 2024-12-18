@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.drago.dynamicoasis'
-    compileSdk 34
+    compileSdk 35 // Updated to meet dependency requirements
 
     defaultConfig {
         applicationId "com.drago.dynamicoasis"
         minSdk 24
-        targetSdk 34
+        targetSdk 35 // Updated to match compileSdk
         versionCode 1
         versionName "1.0"
 
@@ -33,13 +33,12 @@ android {
 }
 
 dependencies {
-
-    implementation 'androidx.core:core-ktx:1.8.0'
+    // Updated versions to ensure compatibility
+    implementation 'androidx.core:core-ktx:1.16.0-alpha01'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.preference:preference:1.2.0'
-    implementation 'androidx.core:core-ktx:+'
-    implementation 'androidx.core:core-ktx:+'
+    
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
