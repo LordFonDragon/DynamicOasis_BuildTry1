@@ -38,13 +38,6 @@
             </intent-filter>
         </activity>
 
-        <receiver
-            android:name=".receivers.MusicPlaybackReceiver"
-            android:enabled="true"
-            android:exported="true">
-
-        </receiver>
-
         <service
             android:name=".services.OverlayService"
             android:enabled="true"
